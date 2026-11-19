@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30BB6D8AB80CE64AD02F0FA5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F8F30DD9A94E234A8AAC6 /* main.swift */; };
+		9C1C56B4FC6904CA97176099 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554119B93D020BEB018D42E /* StatusBarController.swift */; };
+		F16B6741CB9E497F74A099CB /* TodayPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6408EF41A4041FF6AB92BD64 /* TodayPanel.swift */; };
+		E3C33E8220C62EC83998B870 /* TodayTodoAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03178BC24511A736F74FF54 /* TodayTodoAppDelegate.swift */; };
+		2E7A8128F67E6C109611353C /* DayRolloverCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EC09E0AE627CAEED4325B6 /* DayRolloverCenter.swift */; };
+		8A6A0B41371C74655D9F9970 /* DayClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58130F91235AD9927A549840 /* DayClock.swift */; };
+		E0AC2136CA49A73E830CDE90 /* TodayDateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22516788CDC471A59E141F82 /* TodayDateFormatting.swift */; };
+		5DE083A06EF90F7376CCC119 /* TodoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31ABC97A08F81ACB3F56EC /* TodoModels.swift */; };
+		E396E6274E63FF2D5F7449B8 /* TodoRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05231B62FCDB5C84F897E9D8 /* TodoRules.swift */; };
+		B6D51083A0CBB2E041D1F29D /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1D159FD776200D776FA264 /* TodoService.swift */; };
+		6048CA091717C293D4D554A5 /* AtomicJSONStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F892F307CB77B7F5E5C92B1 /* AtomicJSONStore.swift */; };
+		A49FDDAF06C8A0E04AB11341 /* TodoStoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F83F2A4824B57089AAAC44 /* TodoStoreLocation.swift */; };
+		CE313CE602608105F4DE9873 /* AddTodoBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BFD3703A2D4F303C9358ED /* AddTodoBar.swift */; };
+		2CA90CDC3D118D8F2F249DD6 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E11797BDA2F3182B239ADE0 /* EmptyStateView.swift */; };
+		5083129353213CE6CFE6C130 /* MenuBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF9CC122C038D025CB77BE /* MenuBarIcon.swift */; };
+		22C5AE66377B175D040F45A0 /* TodayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA41B2E24970F4BF5959F72 /* TodayHeader.swift */; };
+		A382B740B983E50AF7411D17 /* TodayPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FA1DB32BF995A82F6DF82 /* TodayPalette.swift */; };
+		E50BB9576DD7888DF15A445B /* TodayRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350079B12665DA8E8274C5A /* TodayRootView.swift */; };
+		417D20937009C05136DB098F /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279999FC93B2B8EEBFDB058 /* TodoListView.swift */; };
+		44FC33CF5755FB75BE310D94 /* TodoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A58D80A69F8827CED9C60 /* TodoRowView.swift */; };
+		88B7B0BA36637C51973D7728 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554119B93D020BEB018D42E /* StatusBarController.swift */; };
+		78637D8AC36695E9CDC608F1 /* TodayPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6408EF41A4041FF6AB92BD64 /* TodayPanel.swift */; };
+		A67830909869E9F60110EECD /* TodayTodoAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03178BC24511A736F74FF54 /* TodayTodoAppDelegate.swift */; };
+		635EAA17CACBCED04C8CF251 /* DayRolloverCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EC09E0AE627CAEED4325B6 /* DayRolloverCenter.swift */; };
+		6D6B6E3C97EA5342CDFAF83F /* DayClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58130F91235AD9927A549840 /* DayClock.swift */; };
+		06D4D410C302000BB2B57888 /* TodayDateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22516788CDC471A59E141F82 /* TodayDateFormatting.swift */; };
+		C4543AFCCC2FE9F925DC99A3 /* TodoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E31ABC97A08F81ACB3F56EC /* TodoModels.swift */; };
+		8293939D88135A1CCEB486E1 /* TodoRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05231B62FCDB5C84F897E9D8 /* TodoRules.swift */; };
+		6667CA99CDC81C7A12E2C98E /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1D159FD776200D776FA264 /* TodoService.swift */; };
+		9A631778ED72C435A5659F7E /* AtomicJSONStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F892F307CB77B7F5E5C92B1 /* AtomicJSONStore.swift */; };
+		4CAB42943FFC43F9948FF336 /* TodoStoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F83F2A4824B57089AAAC44 /* TodoStoreLocation.swift */; };
+		A74C9D2E48C9874819F47EE9 /* AddTodoBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BFD3703A2D4F303C9358ED /* AddTodoBar.swift */; };
+		D0A3C1A9A8837847579AAB28 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E11797BDA2F3182B239ADE0 /* EmptyStateView.swift */; };
+		C447942DBEE05A67A4993327 /* MenuBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF9CC122C038D025CB77BE /* MenuBarIcon.swift */; };
+		FB8770ECC9D51999331F3E1B /* TodayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA41B2E24970F4BF5959F72 /* TodayHeader.swift */; };
+		83B381715A5090163F39C2FE /* TodayPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52FA1DB32BF995A82F6DF82 /* TodayPalette.swift */; };
+		03BBD93BD608BF8375D4B48A /* TodayRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F350079B12665DA8E8274C5A /* TodayRootView.swift */; };
+		F6A602773E6C4F8A10B82463 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279999FC93B2B8EEBFDB058 /* TodoListView.swift */; };
+		E953824A80694FD48F952016 /* TodoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89A58D80A69F8827CED9C60 /* TodoRowView.swift */; };
+		474356D795ED64D435603DE7 /* DayRolloverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B5C13DB8C5F4D9B44859A2 /* DayRolloverTests.swift */; };
+		AB0C91F2088407887C6D5CAF /* PersistenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD0A40E77F29FE12A57854E /* PersistenceTests.swift */; };
+		4560E141696B8383C451DF83 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A5074D02632F513D09AACA /* Support.swift */; };
+		998D4F0B3EAC60E15EA00ED1 /* TodoRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC4AB81D4A1AA26E8E3922 /* TodoRulesTests.swift */; };
+		FED2063621248983B97420FC /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82177423BD24E7E555BB2A71 /* AppKit.framework */; };
+		FD0A71753716C482288F6C51 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3016F92D46D1CC3FB1C398 /* SwiftUI.framework */; };
+		4827A5A51F250EC1240063DB /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82177423BD24E7E555BB2A71 /* AppKit.framework */; };
+		1C2CFC8060F0FB048DBAF258 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B3016F92D46D1CC3FB1C398 /* SwiftUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C8D3243AF984244EFB13A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3435DDA2687639586BF0B70;
+			remoteInfo = "今日待办";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D89F8F30DD9A94E234A8AAC6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9554119B93D020BEB018D42E /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		6408EF41A4041FF6AB92BD64 /* TodayPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPanel.swift; sourceTree = "<group>"; };
+		F03178BC24511A736F74FF54 /* TodayTodoAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTodoAppDelegate.swift; sourceTree = "<group>"; };
+		95EC09E0AE627CAEED4325B6 /* DayRolloverCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRolloverCenter.swift; sourceTree = "<group>"; };
+		58130F91235AD9927A549840 /* DayClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayClock.swift; sourceTree = "<group>"; };
+		22516788CDC471A59E141F82 /* TodayDateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayDateFormatting.swift; sourceTree = "<group>"; };
+		7E31ABC97A08F81ACB3F56EC /* TodoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModels.swift; sourceTree = "<group>"; };
+		05231B62FCDB5C84F897E9D8 /* TodoRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRules.swift; sourceTree = "<group>"; };
+		8F1D159FD776200D776FA264 /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
+		7F892F307CB77B7F5E5C92B1 /* AtomicJSONStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicJSONStore.swift; sourceTree = "<group>"; };
+		68F83F2A4824B57089AAAC44 /* TodoStoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStoreLocation.swift; sourceTree = "<group>"; };
+		D4BFD3703A2D4F303C9358ED /* AddTodoBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoBar.swift; sourceTree = "<group>"; };
+		9E11797BDA2F3182B239ADE0 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		09DF9CC122C038D025CB77BE /* MenuBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarIcon.swift; sourceTree = "<group>"; };
+		9CA41B2E24970F4BF5959F72 /* TodayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayHeader.swift; sourceTree = "<group>"; };
+		F52FA1DB32BF995A82F6DF82 /* TodayPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayPalette.swift; sourceTree = "<group>"; };
+		F350079B12665DA8E8274C5A /* TodayRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayRootView.swift; sourceTree = "<group>"; };
+		5279999FC93B2B8EEBFDB058 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		A89A58D80A69F8827CED9C60 /* TodoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRowView.swift; sourceTree = "<group>"; };
+		D7B5C13DB8C5F4D9B44859A2 /* DayRolloverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayRolloverTests.swift; sourceTree = "<group>"; };
+		5AD0A40E77F29FE12A57854E /* PersistenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceTests.swift; sourceTree = "<group>"; };
+		03A5074D02632F513D09AACA /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		41CC4AB81D4A1AA26E8E3922 /* TodoRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRulesTests.swift; sourceTree = "<group>"; };
+		834BA178037219BA8894B06E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8BE9A96DE33C2D71015FF84 /* TodayTodo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TodayTodo.entitlements; sourceTree = "<group>"; };
+		84337AD8D27FCD69AF2C4FC2 /* 今日待办.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "今日待办.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFDED23FA58339F9273F6C84 /* TodayTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82177423BD24E7E555BB2A71 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		6B3016F92D46D1CC3FB1C398 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E88FEF503C1E40FDF23CCDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED2063621248983B97420FC /* AppKit.framework in Frameworks */,
+				FD0A71753716C482288F6C51 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56361F60CA31B6C99997FAC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4827A5A51F250EC1240063DB /* AppKit.framework in Frameworks */,
+				1C2CFC8060F0FB048DBAF258 /* SwiftUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A69FF10E4E6BA77714224DB5 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				7F892F307CB77B7F5E5C92B1 /* AtomicJSONStore.swift */,
+				68F83F2A4824B57089AAAC44 /* TodoStoreLocation.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		FF32626228A5F27E2ED7B41D /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				58130F91235AD9927A549840 /* DayClock.swift */,
+				22516788CDC471A59E141F82 /* TodayDateFormatting.swift */,
+				7E31ABC97A08F81ACB3F56EC /* TodoModels.swift */,
+				05231B62FCDB5C84F897E9D8 /* TodoRules.swift */,
+				8F1D159FD776200D776FA264 /* TodoService.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3E413ADA13B140EE0FFB1F8C /* DayRollover */ = {
+			isa = PBXGroup;
+			children = (
+				95EC09E0AE627CAEED4325B6 /* DayRolloverCenter.swift */,
+			);
+			path = DayRollover;
+			sourceTree = "<group>";
+		};
+		070508D9640ED3110AAEFA8D /* TodayUI */ = {
+			isa = PBXGroup;
+			children = (
+				D4BFD3703A2D4F303C9358ED /* AddTodoBar.swift */,
+				9E11797BDA2F3182B239ADE0 /* EmptyStateView.swift */,
+				09DF9CC122C038D025CB77BE /* MenuBarIcon.swift */,
+				9CA41B2E24970F4BF5959F72 /* TodayHeader.swift */,
+				F52FA1DB32BF995A82F6DF82 /* TodayPalette.swift */,
+				F350079B12665DA8E8274C5A /* TodayRootView.swift */,
+				5279999FC93B2B8EEBFDB058 /* TodoListView.swift */,
+				A89A58D80A69F8827CED9C60 /* TodoRowView.swift */,
+			);
+			path = TodayUI;
+			sourceTree = "<group>";
+		};
+		170FEC270D65373F25739B13 /* AppShell */ = {
+			isa = PBXGroup;
+			children = (
+				9554119B93D020BEB018D42E /* StatusBarController.swift */,
+				6408EF41A4041FF6AB92BD64 /* TodayPanel.swift */,
+				F03178BC24511A736F74FF54 /* TodayTodoAppDelegate.swift */,
+			);
+			path = AppShell;
+			sourceTree = "<group>";
+		};
+		217417931F407B46E68F921C /* AppMain */ = {
+			isa = PBXGroup;
+			children = (
+				D89F8F30DD9A94E234A8AAC6 /* main.swift */,
+			);
+			path = AppMain;
+			sourceTree = "<group>";
+		};
+		420CFB359C2A33DC60BFB328 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A69FF10E4E6BA77714224DB5 /* Persistence */,
+				FF32626228A5F27E2ED7B41D /* Domain */,
+				3E413ADA13B140EE0FFB1F8C /* DayRollover */,
+				070508D9640ED3110AAEFA8D /* TodayUI */,
+				170FEC270D65373F25739B13 /* AppShell */,
+				217417931F407B46E68F921C /* AppMain */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		02B889013D78652D77A5FAD8 /* TodayTodoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7B5C13DB8C5F4D9B44859A2 /* DayRolloverTests.swift */,
+				5AD0A40E77F29FE12A57854E /* PersistenceTests.swift */,
+				03A5074D02632F513D09AACA /* Support.swift */,
+				41CC4AB81D4A1AA26E8E3922 /* TodoRulesTests.swift */,
+			);
+			path = TodayTodoTests;
+			sourceTree = "<group>";
+		};
+		74C0354F987B4FC0FDE2C044 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				02B889013D78652D77A5FAD8 /* TodayTodoTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		BD13AA3ACFF3D0C2ED6E4720 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				834BA178037219BA8894B06E /* Info.plist */,
+				A8BE9A96DE33C2D71015FF84 /* TodayTodo.entitlements */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B687106895D06AA330DAFED5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82177423BD24E7E555BB2A71 /* AppKit.framework */,
+				6B3016F92D46D1CC3FB1C398 /* SwiftUI.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		2F3A6B1E78F896718625FF06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84337AD8D27FCD69AF2C4FC2 /* 今日待办.app */,
+				DFDED23FA58339F9273F6C84 /* TodayTodoTests.xctest */,
+			);
+			sourceTree = "<group>";
+		};
+		B9340614599AB78F485950C7 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				420CFB359C2A33DC60BFB328 /* Sources */,
+				74C0354F987B4FC0FDE2C044 /* Tests */,
+				BD13AA3ACFF3D0C2ED6E4720 /* Config */,
+				B687106895D06AA330DAFED5 /* Frameworks */,
+				2F3A6B1E78F896718625FF06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3435DDA2687639586BF0B70 /* 今日待办 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5505F9AF814A7F0992DE2402 /* Build configuration list for PBXNativeTarget "今日待办" */;
+			buildPhases = (
+				2FB286088BD0BF8AE88E0D78 /* Sources */,
+				9E88FEF503C1E40FDF23CCDE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "今日待办";
+			productName = "今日待办";
+			productReference = 84337AD8D27FCD69AF2C4FC2 /* 今日待办.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A700229C3AC2DAE057FE5B27 /* TodayTodoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5A230C5C352779E4F6499D2 /* Build configuration list for PBXNativeTarget "TodayTodoTests" */;
+			buildPhases = (
+				253B7D7D35FBA95AB93123FF /* Sources */,
+				56361F60CA31B6C99997FAC5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B28E826828125D7A3C2BDBC /* PBXTargetDependency */,
+			);
+			name = TodayTodoTests;
+			productName = TodayTodoTests;
+			productReference = DFDED23FA58339F9273F6C84 /* TodayTodoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					E3435DDA2687639586BF0B70 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A700229C3AC2DAE057FE5B27 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = E3435DDA2687639586BF0B70;
+					};
+				};
+			};
+			buildConfigurationList = AD8DC1A475C1871509FE9877 /* Build configuration list for PBXProject "TodayTodo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = B9340614599AB78F485950C7;
+			productRefGroup = 2F3A6B1E78F896718625FF06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3435DDA2687639586BF0B70 /* 今日待办 */,
+				A700229C3AC2DAE057FE5B27 /* TodayTodoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2FB286088BD0BF8AE88E0D78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30BB6D8AB80CE64AD02F0FA5 /* main.swift in Sources */,
+				9C1C56B4FC6904CA97176099 /* StatusBarController.swift in Sources */,
+				F16B6741CB9E497F74A099CB /* TodayPanel.swift in Sources */,
+				E3C33E8220C62EC83998B870 /* TodayTodoAppDelegate.swift in Sources */,
+				2E7A8128F67E6C109611353C /* DayRolloverCenter.swift in Sources */,
+				8A6A0B41371C74655D9F9970 /* DayClock.swift in Sources */,
+				E0AC2136CA49A73E830CDE90 /* TodayDateFormatting.swift in Sources */,
+				5DE083A06EF90F7376CCC119 /* TodoModels.swift in Sources */,
+				E396E6274E63FF2D5F7449B8 /* TodoRules.swift in Sources */,
+				B6D51083A0CBB2E041D1F29D /* TodoService.swift in Sources */,
+				6048CA091717C293D4D554A5 /* AtomicJSONStore.swift in Sources */,
+				A49FDDAF06C8A0E04AB11341 /* TodoStoreLocation.swift in Sources */,
+				CE313CE602608105F4DE9873 /* AddTodoBar.swift in Sources */,
+				2CA90CDC3D118D8F2F249DD6 /* EmptyStateView.swift in Sources */,
+				5083129353213CE6CFE6C130 /* MenuBarIcon.swift in Sources */,
+				22C5AE66377B175D040F45A0 /* TodayHeader.swift in Sources */,
+				A382B740B983E50AF7411D17 /* TodayPalette.swift in Sources */,
+				E50BB9576DD7888DF15A445B /* TodayRootView.swift in Sources */,
+				417D20937009C05136DB098F /* TodoListView.swift in Sources */,
+				44FC33CF5755FB75BE310D94 /* TodoRowView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		253B7D7D35FBA95AB93123FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B7B0BA36637C51973D7728 /* StatusBarController.swift in Sources */,
+				78637D8AC36695E9CDC608F1 /* TodayPanel.swift in Sources */,
+				A67830909869E9F60110EECD /* TodayTodoAppDelegate.swift in Sources */,
+				635EAA17CACBCED04C8CF251 /* DayRolloverCenter.swift in Sources */,
+				6D6B6E3C97EA5342CDFAF83F /* DayClock.swift in Sources */,
+				06D4D410C302000BB2B57888 /* TodayDateFormatting.swift in Sources */,
+				C4543AFCCC2FE9F925DC99A3 /* TodoModels.swift in Sources */,
+				8293939D88135A1CCEB486E1 /* TodoRules.swift in Sources */,
+				6667CA99CDC81C7A12E2C98E /* TodoService.swift in Sources */,
+				9A631778ED72C435A5659F7E /* AtomicJSONStore.swift in Sources */,
+				4CAB42943FFC43F9948FF336 /* TodoStoreLocation.swift in Sources */,
+				A74C9D2E48C9874819F47EE9 /* AddTodoBar.swift in Sources */,
+				D0A3C1A9A8837847579AAB28 /* EmptyStateView.swift in Sources */,
+				C447942DBEE05A67A4993327 /* MenuBarIcon.swift in Sources */,
+				FB8770ECC9D51999331F3E1B /* TodayHeader.swift in Sources */,
+				83B381715A5090163F39C2FE /* TodayPalette.swift in Sources */,
+				03BBD93BD608BF8375D4B48A /* TodayRootView.swift in Sources */,
+				F6A602773E6C4F8A10B82463 /* TodoListView.swift in Sources */,
+				E953824A80694FD48F952016 /* TodoRowView.swift in Sources */,
+				474356D795ED64D435603DE7 /* DayRolloverTests.swift in Sources */,
+				AB0C91F2088407887C6D5CAF /* PersistenceTests.swift in Sources */,
+				4560E141696B8383C451DF83 /* Support.swift in Sources */,
+				998D4F0B3EAC60E15EA00ED1 /* TodoRulesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B28E826828125D7A3C2BDBC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3435DDA2687639586BF0B70 /* 今日待办 */;
+			targetProxy = 2C8D3243AF984244EFB13A65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DCFB30EAE59D6917CE906371 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+				SWIFT_VERSION = 5.0;
+
+			};
+			name = Debug;
+		};
+		37CDDD61FED8A39EEA88C0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = -O;
+				SWIFT_VERSION = 5.0;
+
+			};
+			name = Release;
+		};
+		91B8F6FB95707A0AB87A87F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hx645965603.TodayTodo;
+				PRODUCT_MODULE_NAME = TodayTodo;
+				PRODUCT_NAME = "今日待办";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+				SWIFT_VERSION = 5.0;
+				ENABLE_TESTABILITY = YES;
+
+				CODE_SIGN_ENTITLEMENTS = Config/TodayTodo.entitlements;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+
+			};
+			name = Debug;
+		};
+		BB071F776B40F4837F61A6A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hx645965603.TodayTodo;
+				PRODUCT_MODULE_NAME = TodayTodo;
+				PRODUCT_NAME = "今日待办";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+				SWIFT_VERSION = 5.0;
+				ENABLE_TESTABILITY = YES;
+
+				CODE_SIGN_ENTITLEMENTS = Config/TodayTodo.entitlements;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = -O;
+
+			};
+			name = Release;
+		};
+		1CD6F2168A0DAE0628DDD709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hx645965603.TodayTodoTests;
+				PRODUCT_MODULE_NAME = TodayTodoTests;
+				PRODUCT_NAME = TodayTodoTests;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				BUNDLE_LOADER = "";
+				TEST_HOST = "";
+
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+
+			};
+			name = Debug;
+		};
+		804C6C12DD7ADD7F19F0611C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hx645965603.TodayTodoTests;
+				PRODUCT_MODULE_NAME = TodayTodoTests;
+				PRODUCT_NAME = TodayTodoTests;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				BUNDLE_LOADER = "";
+				TEST_HOST = "";
+
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = -O;
+
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD8DC1A475C1871509FE9877 /* Build configuration list for PBXProject "TodayTodo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCFB30EAE59D6917CE906371 /* Debug */,
+				37CDDD61FED8A39EEA88C0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5505F9AF814A7F0992DE2402 /* Build configuration list for PBXNativeTarget "今日待办" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B8F6FB95707A0AB87A87F1 /* Debug */,
+				BB071F776B40F4837F61A6A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5A230C5C352779E4F6499D2 /* Build configuration list for PBXNativeTarget "TodayTodoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CD6F2168A0DAE0628DDD709 /* Debug */,
+				804C6C12DD7ADD7F19F0611C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
